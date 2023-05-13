@@ -1,0 +1,72 @@
+  ion-tab-bar{
+    height: 7vh;
+  }
+  ion-page{
+    min-height: 100vh;
+    viewport-fit: cover;
+  }
+  ion-tab-button{
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  ion-back-button{
+    padding-left: 10px;
+    padding-top: .7vh;
+  }
+  ion-toolbar{
+    height: 6vh;
+    --background: #f2f2f2;
+  }
+  ion-toolbar h3{
+    margin: auto;
+    text-align: center;
+  }
+  ion-tab-button{
+    --color: #22222250;
+    --color-selected: #222222;
+  }
+  ion-label{
+    font-family: sofia-pro,sans-serif;
+    font-weight: 600;
+  }
+  ion-page{
+    max-height: 1040px;
+    max-width: 585px;
+  }
+  ion-modal{
+    --background: #f2f2f2;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #f2f2f2 !important;
+    }
+  .swiper-pagination-bullet{
+    background-color: #7b7a7a;
+  }
+
+  .custom-toast {
+    transform: translateY(-8vh);
+    --background: #222222;
+    --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    --color: #f2f2f2;
+  }
+        
+  .custom-toast::part(message) {
+      font-family: sofia-pro,sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      text-align: center;
+  }
+
+  .custom-toast::part(button) {
+      border-left: 1px solid #d2d2d2;
+      color: #030207;
+      font-size: 15px;
+  }
+
+  @import url("https://use.typekit.net/bhc3run.css");
+
+  ion-modal{
+    --width: 100%;
+    --height: 100%;
+  }

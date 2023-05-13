@@ -1,0 +1,70 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/api/pay",
+        "function": "pay",
+        "region": "us-central1"
+      },
+      {
+        "source": "/api/products",
+        "function": "products",
+        "region": "us-central1"
+      },
+      {
+        "source": "/api/calculateTotal",
+        "function": "calculateTotal",
+        "region": "us-central1"
+      },
+      {
+        "source": "/api/getCatalogItemId",
+        "function": "getCatalogItemId",
+        "region": "us-central1"
+      },
+      {
+        "source": "/api/getAllCatalogItemIds",
+        "function": "getAllCatalogItemIds",
+        "region": "us-central1"
+      },
+      {
+        "source": "/api/getInventory",
+        "function": "getInventory",
+        "region": "us-central1"
+      },
+      {
+        "source": "/api/getSingleStock",
+        "function": "getSingleStock",
+        "region": "us-central1"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

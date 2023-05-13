@@ -1,0 +1,7 @@
+{
+  "name": "vesselswebsite",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
